@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const places = require("../models/places.js");
 
-// GET /places
 router.get("/", (req, res) => {
   let places = [
     {
@@ -16,7 +15,7 @@ router.get("/", (req, res) => {
       city: "Phoenix",
       state: "AZ",
       cuisines: "Coffee, Bakery",
-      pic: "/images/outside- restaurant.jpg",
+      pic: "/images/outside-restaurant.jpg",
     },
   ];
 
@@ -74,7 +73,7 @@ router.post("/", (req, res) => {
     req.body.pic = "http://placekitten.com/400/400";
   }
   if (!req.body.city) {
-    req.body.city = "Any town";
+    req.body.city = "Anytown";
   }
   if (!req.body.state) {
     req.body.state = "USA";

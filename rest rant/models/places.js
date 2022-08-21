@@ -11,6 +11,6 @@ module.exports = [
     city: "Phoenix",
     state: "AZ",
     cuisines: "Coffee, Bakery",
-    pic: "/images/outside- restaurant.jpg",
+    pic: "/images/outside-restaurant.jpg",
   },
 ];
